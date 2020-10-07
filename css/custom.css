@@ -1,0 +1,309 @@
+* {
+    margin:.5vw 0;
+    padding: 0;
+}
+
+body {
+    font-size: 2vw;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+    background-color: #fff6f6;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+header > #izquierda {
+    order: 1;
+    flex: 2 1 350px;
+    /* border: 2px solid red; */
+    padding: 0 0 0 12vw;
+}
+
+#izquierda img {
+    width: 30%;
+}
+
+#derecha {
+    order: 2;
+    flex: 1 1 150px;
+    /* border: 2px solid yellow; */
+    padding: 0 0 0 15vw;
+    /* position: relative; */
+}
+
+#wrapper {
+    position: relative;
+}
+
+#carrito {
+    text-align: center;
+    width: 33vw;
+    position: absolute;
+    right: 10vw;
+    top: 2vw;
+    font-size: 1.2vw;
+    padding: 0 1.2vw 1.2vw 1.2vw;
+    background-color: white;
+    display: none;
+}
+
+#wrapper:hover #carrito {
+    top: 32px;
+    display: block;
+}
+
+#carrito p {
+    border: 1px solid red;
+    border-radius: 1vw;
+    background-color: red;
+    color: white;
+    padding: .5vw 1vw;
+}
+
+#carrito p:hover {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    box-sizing: content-box;
+}
+
+th, td {
+    text-align: center;
+    padding: 1vw 1vw;
+    border-bottom: .1vw solid green;
+    width: 35%;
+}
+
+tr td:first-child img{
+    width: 8vw;
+}
+
+tr td:last-child a {
+    color: white;
+    background-color: red;
+    border: .1vw solid red;
+    border-radius: 5vw;
+    font-size: 1.6vw;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    color: white;
+    /* padding: 5vw; */
+    margin-bottom: 0;
+}
+
+.contenido-hero {
+    width: 36vw;
+    /* border: 1px solid yellow; */
+    margin: 0 6vw 0 6vw;
+    padding: 5vw;
+}
+
+.contenido-hero #fuente {
+    font-size: 1.3vw;
+}
+
+form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inlineBlock {
+    height: 3vw;
+    order: 1;
+    flex: 1 1 500px;
+    border: none;
+    font-size: 1.5vw;
+    padding: 0 3vw;
+}
+
+.inlineBlock::placeholder {
+    font-size: 1.4vw;
+    color: rgb(170, 213, 228)
+}
+
+.lupa {
+    background-image: url(/img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: white;
+    border: none;
+    height: 3vw;
+    cursor: pointer;
+    order: 2;
+    flex: 1 .6 50px;
+}
+
+#barra {
+    background-image: linear-gradient(to right, rgb(107, 21, 141) 0%, rgb(248, 89, 110) 100%);
+    margin: 0;
+}
+
+#container {
+    margin: 0;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#flexIzquierdo, #flexCentro, #flexDerecho {
+    flex: 1 1 25vw;
+    /* border: 2px dashed yellow; */
+}
+
+#flexIzquierdo {
+    order: 1;
+}
+
+#flexCentro {
+    order: 2;
+}
+
+#flexDerecho {
+    order: 3;
+}
+
+#container p {
+    font-size: 1.4vw;
+    text-align: center;
+    /* border: 1px solid green; */
+    color: white;
+}
+
+#lista-cursos {
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.contenedor {
+    text-align: center;
+    padding: 0 4vw 2vw 4vw;
+}
+
+.tresFilasDeCard {
+    margin: 0 6vw 0 6vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.card {
+    flex: 1 1 300px;
+    border: 1px solid rgb(165, 164, 164);
+    background-color: white;
+    margin: 0 1vw 2vw 1vw;
+}
+
+.card img:first-child {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.3vw;
+    font-weight: 600;
+    text-align: left;
+    margin: 0 2vw;
+    line-height: 1.25;
+    letter-spacing: -.1vw;
+    /* border: 1px solid green; */
+}
+
+.autor {
+    color: #222;
+    font-size: 1.3vw;
+    text-align: left;
+    margin: .7vw 2vw;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.puntuacion {
+    float: left;
+    margin: 0 2vw 1vw 2vw;
+    /* border: 1px solid red; */
+}
+
+.clearFlotado {
+    clear: both;
+}
+
+.precio {
+    text-decoration: line-through;
+    text-align: left;
+    margin: 0 2vw 2vw 2vw;
+}
+
+.card span {
+    float: right;
+    margin: 0;
+}
+
+.card a {
+    background-color: lightskyblue;
+    text-decoration: none;
+    font-size: 1vw;
+    color: white;
+    display: block;
+    margin: 1.3vw;
+    padding: 1vw;
+    border-radius: .5vw;
+    letter-spacing: .1vw;
+}
+
+.card a:hover {
+    background-color: rgb(103, 195, 252);
+}
+
+
+footer {
+    border: .1vw solid gray;
+}
+
+nav {
+    margin: 9vw 0 0 12vw;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+
+#primerGrupo {
+    margin: 0 10vw 7vw 0;
+}
+
+#segundoGrupo {
+    margin: 0 3vw 7vw 0;
+}
+
+.unionDeGruposDeFooter a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: lightskyblue;
+}

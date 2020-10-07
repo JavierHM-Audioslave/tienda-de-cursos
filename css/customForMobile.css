@@ -1,0 +1,109 @@
+header {
+    min-height: 15vw;
+}
+
+header > #izquierda {
+    padding: 0;
+}
+
+#izquierda img {
+    width: 80%;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#wrapper:hover #carrito {
+    right: 1vw;
+}
+
+#carrito {
+    font-size: 4.5vw;
+    width: 80vw;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 1vw 0;
+}
+
+tr td:last-child a {
+    font-size: 5vw;
+}
+
+tr td:first-child img{
+    width: 100%;
+}
+
+.contenido-hero {
+    width: 98%;
+    margin: 0 0 0 2vw;
+    padding: 3vw;
+    font-size: 6vw;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.contenido-hero #fuente {
+    font-size: 6vw;
+    text-align: center;
+}
+
+.inlineBlock {
+    height: 6vw;
+    font-size: 4vw;
+}
+
+.inlineBlock::placeholder {
+    font-size: 4vw;
+}
+
+.lupa {
+    height: 6vw;
+}
+
+#container {
+    /* border: 1px solid red; */
+    flex-flow: column nowrap;
+}
+
+#container p, #container p, #container p {
+    font-size: 3.5vw;
+}
+
+#flexIzquierdo, #flexCentro, #flexDerecho {
+    flex: 1 1 70px;
+    /* border: 2px dashed yellow; */
+}
+
+.contenedor {
+    font-size: 4vw;
+}
+
+.tresFilasDeCard {
+    margin: 0;
+}
+
+h4 {
+    font-size: 4vw;
+}
+
+.autor {
+    font-size: 4vw;
+}
+
+.precio {
+    font-size: 5vw;
+}
+
+.card a {
+    font-size: 4vw;
+}
+
+.unionDeGruposDeFooter a {
+    font-size: 2vw;
+}
